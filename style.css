@@ -1,0 +1,241 @@
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+/* Styles for header and paragraph */
+h1 {
+    color: #5d5d5d;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3em;
+    letter-spacing: 4px;
+    font-size: 56px;
+}
+
+h2 {
+    color: #393939;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: rgb(205, 165, 34);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+}
+
+/* Style for body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style for menu */
+#menu {
+    flex: 1;
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #352C26;
+}
+
+/* Style for content block */
+#content {
+    height: 100vh;
+    margin-left: 220px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styles for the menu links */
+.menu-link {
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu-link:hover {
+    background-color: #684128;
+    transition: 0.2s ease-in-out;
+}
+
+.color-brown {
+    color: #e58722;
+}
+
+.color-green {
+    color: rgb(23, 124, 23);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.color-off-white {
+    color: #ccc;
+}
+
+/* Style for centering an image */
+.center-image {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Style to resize logo */
+.logo-resize {
+    width: 100px;
+    transition: transform 0.2s ease-in-out;
+} 
+
+.logo-resize:hover {
+    transform: scale(1.1);
+}
+
+/* Styles for tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Styles for table images */
+    .coffe-img-resize {
+        width: 250px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .coffe-img-resize:hover {
+        transform: scale(1.1);
+    }
+
+/* Style for cursor when you hover over the menu */
+.custom-cursor {
+    cursor: pointer;
+}
+
+/* Style for making text not be selectable */
+.unselectable {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Style the input fields */
+  input[type="text"], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the container for the three text boxes */
+  .input-group {
+    display: flex;
+  }
+  
+  /* Style each text box */
+  .input-group input[type="text"] {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
+  /* Style the big text box */
+  textarea {
+    height: 200px;
+    width: 100%;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #e58722;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 2px solid orange;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hover effect for the submit button */
+  button[type="submit"]:hover {
+    background-color: white;
+	color: #e58722;
+    border-color: #e58722;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+/* Footer */
+.footer {
+    float: right;
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+    height: 7vh; /* Adjust the height as needed */
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Footer buttons */
+  .footer button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(51, 50, 50);
+    border-radius: 4px;
+    border: 2px solid rgb(46, 43, 37);
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer button:hover {
+    background-color: white;
+	color: #ff8400;
+    border-color: #ff8400;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }

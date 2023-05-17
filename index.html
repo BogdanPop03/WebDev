@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Coffe Shop</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+          function displayContent(contentId) {
+            // Get the content from the selected div
+            var content = document.getElementById(contentId).innerHTML;
+            
+            // Set the content of the "content" div
+            document.getElementById("content").innerHTML = content;
+          }
+        </script>
+    </head>
+
+    <body>
+        <!-- Menu on the left side -->
+        <div id="menu">
+            <span onclick="displayContent('content1')"> <img src="Imagini\hotspot_coffee_logo.png" alt="Logo" class="center-image logo-resize custom-cursor"> </span>
+            <br>
+            <span class="menu-link custom-cursor unselectable color-brown bold" onclick="displayContent('content1')"> Cafea Prăjită </span> 
+            <span class="menu-link custom-cursor unselectable color-green bold" onclick="displayContent('content2')"> Cafea Verde </span>
+            <span class="menu-link custom-cursor unselectable color-off-white bold" onclick="displayContent('content3')"> Contacte </span>
+            <a>
+              București, Tache Ionescu, nr. 8
+            </a>
+            <a>
+              <span>&#x1F4DE;</span> 
+              +40 739 864 890 
+            </a>
+            
+        </div>
+        <!-- Main content on the right side -->
+        <div id="content">
+          <h1>
+            CAFEA PRĂJITĂ
+          </h1>
+          <table>
+            <tr>
+              <td> <img src="Imagini\Cafea_prajita\Asset-22-min.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\brazilia-bluediamond_small-700x957.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\Costa-Rica-250.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\decaf_small-copy-1-1-1-700x957.png" class="coffe-img-resize"> </td>
+            </tr>
+            <tr>
+              <td> <img src="Imagini\Cafea_prajita\ethiopia-kokanna_small-700x957.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\ethiopia-sidamo_small-700x957.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\hotspot_small-700x957.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\Italian-Espresso-250g.jpg" class="coffe-img-resize"> </td>
+            </tr>
+            <tr>
+              <td> <img src="Imagini\Cafea_prajita\Kenya-250.jpg" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\nicaragua_small-700x957.png" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\Pachet.jpg" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\panama_small-700x957.png" class="coffe-img-resize"> </td>
+            </tr>
+            <tr>
+              <td> <img src="Imagini\Cafea_prajita\peru250.jpg" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\Rwanda-250.jpg" class="coffe-img-resize"> </td>
+              <td> <img src="Imagini\Cafea_prajita\san-augustin.png" class="coffe-img-resize"> </td>
+            </tr>
+          </table>
+          <h1>
+            cafea proaspăt prăjită
+          </h1>
+          <p>
+            În fiecare zi, suntem bucuroși să prăjim cafea de specialitate pentru voi. Puteți cumpăra cafea boabe sau cafea măcinată de la noi. Este o arabica 100%, de calitate excepțională și aromată sau blenduri arabica. Întraga gamă de cafea are un gust plin și corpolent. Se potrivește pentru preparare la filtru, presă franceză, espressor, ibric sau ceainic. Ambalajele de 250, 500 de grame si 1 kg sunt potrivite pentru casă sau cadou pentru oamenii dragi. Iar pozitiile de 5,10 și 20 kg vor fi avantajoase pentru birou sau cafenele.
+          </p>
+          <p>
+            Selecție mare de grad de măcinare – boabe de cafea, espresso, moka. Doar proaspăt prăjit. În magazinul nostru veți găsi cafea braziliană, columbiană, etiopiană, dar și cafea din multe colțuri ale lumii.
+          </p>
+          <p>
+            Puteți comanda cafea în București sau în orice alt oraș din România. Livrarea – 19 lei. Livrarea gratuită începe de la o comandă de 250 lei.
+          </p>
+          <div class="footer">
+            <button>Termeni si conditii</button>
+            <button>Politica de retur</button>
+            <button>Politica de confidentialitate</button>
+            <button>Politica Cookies</button>
+          </div>
+        </div>
+        <div id="content1" style="display: none;">
+          <h1>
+            cafea prăjită
+          </h1>
+          <table>
+              <tr>
+                <td> <img src="Imagini\Cafea_prajita\Asset-22-min.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\brazilia-bluediamond_small-700x957.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\Costa-Rica-250.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\decaf_small-copy-1-1-1-700x957.png" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_prajita\ethiopia-kokanna_small-700x957.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\ethiopia-sidamo_small-700x957.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\hotspot_small-700x957.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\Italian-Espresso-250g.jpg" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_prajita\Kenya-250.jpg" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\nicaragua_small-700x957.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\Pachet.jpg" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\panama_small-700x957.png" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_prajita\peru250.jpg" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\Rwanda-250.jpg" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_prajita\san-augustin.png" class="coffe-img-resize"> </td>
+              </tr>
+          </table>
+          <h1>
+            cafea proaspăt prăjită
+          </h1>
+          <p>
+            În fiecare zi, suntem bucuroși să prăjim cafea de specialitate pentru voi. Puteți cumpăra cafea boabe sau cafea măcinată de la noi. Este o arabica 100%, de calitate excepțională și aromată sau blenduri arabica. Întraga gamă de cafea are un gust plin și corpolent. Se potrivește pentru preparare la filtru, presă franceză, espressor, ibric sau ceainic. Ambalajele de 250, 500 de grame si 1 kg sunt potrivite pentru casă sau cadou pentru oamenii dragi. Iar pozitiile de 5,10 și 20 kg vor fi avantajoase pentru birou sau cafenele.
+          </p>
+          <p>
+            Selecție mare de grad de măcinare – boabe de cafea, espresso, moka. Doar proaspăt prăjit. În magazinul nostru veți găsi cafea braziliană, columbiană, etiopiană, dar și cafea din multe colțuri ale lumii.
+          </p>
+          <p>
+            Puteți comanda cafea în București sau în orice alt oraș din România. Livrarea – 19 lei. Livrarea gratuită începe de la o comandă de 250 lei.
+          </p>
+          <div class="footer">
+            <button>Termeni si conditii</button>
+            <button>Politica de retur</button>
+            <button>Politica de confidentialitate</button>
+            <button>Politica Cookies</button>
+          </div>
+        </div>
+        <div id="content2" style="display: none;">
+          <h1>
+            cafea verde
+          </h1>
+            <table>
+              <tr>
+                <td> <img src="Imagini\Cafea_verde\brazilia.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\costa-rica-2.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\finca.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\guatemala.png" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_verde\honduras.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\kenya.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\nicaragua.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\panama.png" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_verde\rwanda.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\san-domingo.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\san-jose.png" class="coffe-img-resize"> </td>
+                <td> <img src="Imagini\Cafea_verde\sidamo.png" class="coffe-img-resize"> </td>
+              </tr>
+              <tr>
+                <td> <img src="Imagini\Cafea_verde\tanzania.png" class="coffe-img-resize"> </td>
+              </tr>
+            </table>
+          <h1>
+            cafea verde boabe
+          </h1>
+          <p>
+            Această cafea este potrivită pentru prăjirea ulterioară sau preparare în forma sa naturală netratată. Cafeaua verde din soiurile disponibile este una dintre cele mai bune cafele din lume. Se clasează printre cele mai bune 10% arabica pe care le puteți găsi în vânzare. Cafeaua e disponibilă în ambalaj de 1 kg. Cumpărați, prăjiți individual și bucurați-vă de gustul minunat al cafelei
+          </p>
+          <div class="footer">
+            <button>Termeni si conditii</button>
+            <button>Politica de retur</button>
+            <button>Politica de confidentialitate</button>
+            <button>Politica Cookies</button>
+          </div>
+        </div>
+        <div id="content3" style="display: none;">
+          <h1>
+            contacte
+          </h1>
+          <p>
+            <span>&#x1F4DE;</span> 
+            +40 739 864 890 
+          </p>
+          <p>
+            <span>&#x2709;</span> 
+            orders@hotspotcoffee.ro
+          </p>
+          <h4>
+            în caz ca vrei să anulezi un abonament sau să ne spui că ți-a plăcut cafeaua
+          </h4>
+          <h2>
+            scrie-ne un mesaj
+          </h2>
+          <form action="#" method="post" target="content3">
+            <div class="input-group">
+              <input type="text" name="field1" placeholder="Numele dumneavoastră*">
+              <input type="text" name="field2" placeholder="E-mail*">
+              <input type="text" name="field3" placeholder="Telefon">
+            </div>
+            <textarea name="big-field" placeholder="Mesaj*"></textarea>
+            <button type="submit">CONTACTEAZĂ-NE</button>
+          </form>
+          <div class="footer">
+            <button>Termeni si conditii</button>
+            <button>Politica de retur</button>
+            <button>Politica de confidentialitate</button>
+            <button>Politica Cookies</button>
+          </div>
+        </div>
+    </body>
+</html>
