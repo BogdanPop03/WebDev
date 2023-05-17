@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Top menu styles */
+header {
+    background-color: #876d3b;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.top-menu {
+    list-style: none;
+}
+
+.top-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.top-menu li:last-child {
+    margin-right: 0;
+}
+
+.top-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+.top-menu li :hover {
+    background-color: burlywood;
+}
+
+/* Content area styles */
+main {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.active {
+    display: block;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+button[type="submit"] {
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .top-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+}

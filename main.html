@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Milk and Cattle Farm</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="top-menu">
+                <li><a href="#" onclick="changeContent('home')">Acasă</a></li>
+                <li><a href="#" onclick="changeContent('about')">Despre noi</a></li>
+                <li><a href="#" onclick="changeContent('services')">Servicii</a></li>
+                <li><a href="#" onclick="changeContent('contact')">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content-home" class="content active">
+            <h1> Bine ați venit la ferma noastră!</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet obcaecati praesentium, vel voluptatum ab
+                doloribus libero numquam voluptas placeat nobis sit harum fugiat! Quasi, dolor assumenda. Obcaecati
+                culpa placeat ea. </p>
+            <p> *Imagini cu ferma* </p>
+        </section>
+        <section id="content-about" class="content">
+            <h1> Despre noi </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas neque nobis praesentium minima
+                perspiciatis, labore laborum nemo nulla reprehenderit nihil est, fuga ducimus eaque molestiae nam. Qui,
+                odit ab. </p>
+        </section>
+        <section id="content-services" class="content">
+            <h1> Serviciile noastre </h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore corporis ducimus repellendus eaque odio
+                blanditiis voluptas natus omnis, ut quae repudiandae debitis, fugiat magni quasi deleniti! Asperiores
+                provident aperiam ducimus. </p>
+        </section>
+        <section id="content-contact" class="content">
+            <h1> Contact </h1>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur vitae facilis, natus quod, voluptates
+                illo dicta ex, impedit temporibus aliquid hic. Repellendus nobis quisquam ea modi eos vitae fuga nisi.
+            </p>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="first-name"> Prenume: </label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name"> Nume: </label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"> Adresă de Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"> Mesaj: </label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit"> Trimite </button>
+                <p id="success-message" class="hidden">Form submitted successfully!</p>
+                <p id="error-message" class="hidden"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
